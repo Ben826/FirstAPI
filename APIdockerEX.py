@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import random 
 
 #entrypoint to API, queries info from API, creates an instance
-app = FastAPI()
+app = FastAPI(port=8080)
 
 #provides path to get information
 @app.get("/dockertest")
